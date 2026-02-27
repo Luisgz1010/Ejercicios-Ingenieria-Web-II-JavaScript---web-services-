@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Loops</h1>
+<h2>The While Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+
+let i = Number(prompt("Digite el numero "));
+while (i > 0) {
+    if (i<40){
+        text += "El numero es menor a 40, el numero es: " + i + "<br>"
+        i++;
+    }else if (i>20 && i<40){
+        text += "El numero es mayor a 20, el numero es: " + i + "<br>";
+        i++;
+    } else{
+        text += "El numero es 20 o es menor a 20 o es mayor a 20<br>";
+    }
+    i = 0;
+  
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
