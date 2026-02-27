@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .par {
+            background-color: lightgray;
+        }
+        .impar{
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+<h2>Tabla Registros</h2>
+<table id = "tabla">
+    <tr><td>impar </td></tr>
+    <tr><td>par </td></tr>
+    <tr><td>impar </td></tr>
+    <tr><td>par </td></tr>
+    <tr><td>impar </td></tr>
+</table> 
+<script>
+    let filas = document.querySelectorAll("#tabla tr");
+    for (let i = 0; i< filas.length; i++){
+        if ((i + 1)%2===0){
+            filas[i].classList.add("par");
+        }else{
+            filas[i].classList.add("impar");
+        }
+    }
+</script>
+</body>
+</html>

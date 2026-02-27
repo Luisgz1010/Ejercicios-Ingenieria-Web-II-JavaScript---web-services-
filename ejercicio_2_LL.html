@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <script>
+        let modCorrecto ="Autenticacion";
+        let fallos = 0;
+        let maxIntentos = 3;
+        let mod;
+
+        while(fallos < maxIntentos){
+            mod = prompt("Ingrese el nombre del modulo:");
+            if (mod === modCorrecto){
+                console.log("Correcto");
+                break;
+            }else{
+                fallos++;
+                console.log("Intento #" + fallos + "fallido");
+            }
+        }
+
+        if(fallos === maxIntentos){
+            let alerta = "Cuidado: El modulo " 
+            + modCorrecto + " registra " + fallos +" intentos malos ";
+            console.log(alerta);
+            console.log("Sistema bloqueado por intentos fallidos");
+        }
+        
+    </script>
+    
+</body>
+</html>

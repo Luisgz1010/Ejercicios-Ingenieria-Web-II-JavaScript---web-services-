@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <h2>Resultado</h2>
+    <p id = "Su resultado es"></p>
+    <script>
+        const min_Nota = 3.0;
+        let nota = Number(prompt("Ingrese su nota final"));
+        if (nota>=min_Nota){
+            m = "Usted aprobo asignatura";
+
+        }else{
+            m="La asignatura fue reprobada";
+        }
+        document.getElementById("Su resultado es").textContent = m;
+    </script>
+    
+</body>
+</html>
